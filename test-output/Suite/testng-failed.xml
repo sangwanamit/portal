@@ -5,8 +5,8 @@
     <classes>
       <class name="adConsent.RegressionTests.Test">
         <methods>
-          <include name="testTest"/>
           <include name="setUp"/>
+          <include name="getCredentials"/>
         </methods>
       </class> <!-- adConsent.RegressionTests.Test -->
     </classes>

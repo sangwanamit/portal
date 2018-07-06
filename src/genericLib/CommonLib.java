@@ -16,17 +16,10 @@ public class CommonLib extends Base{
 		driver.manage().window().maximize();
 	}
 	
-	public static int PidGen() {
-	Random random = new Random();
-		while(true) {
-			
-		int pid = random.nextInt();
-		
-		if(pid > 1000000 && pid <999999999 )	
-			return pid ;
-		}
+	public static String appID = "5003092";
+
 		
 	}
 	
 	
-}
+
