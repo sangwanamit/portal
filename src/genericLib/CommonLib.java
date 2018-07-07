@@ -8,15 +8,15 @@ public class CommonLib extends Base{
 	private static String CompToolURL = "https://staging.admin.privacy.zynga.com/util/";
 	
 	public static void gotoportal() {
-		driver.get(portaURL);
+		driver.navigate().to(portaURL);
 		driver.manage().window().maximize();
 	}
 	public static void gotoUtilTool() {
-		driver.get(CompToolURL);
+		driver.navigate().to(CompToolURL);
 		driver.manage().window().maximize();
 	}
 	
-	public static String appID = "5003092";
+	public static String appID = "5004584";
 
 		
 	}

@@ -1,14 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Default suite]">
-  <test name="Default test(failed)">
+<suite name="Failed suite [Suite]">
+  <test name="Test(failed)">
     <classes>
-      <class name="adConsent.RegressionTests.TootTest">
+      <class name="genericLib.Base">
         <methods>
-          <include name="getCredentials"/>
           <include name="setUp"/>
+          <include name="exit"/>
         </methods>
-      </class> <!-- adConsent.RegressionTests.TootTest -->
+      </class> <!-- genericLib.Base -->
+      <class name="adConsent.RegressionTests.FaqPageTests">
+        <methods>
+          <include name="verifyFaqPageTitle"/>
+        </methods>
+      </class> <!-- adConsent.RegressionTests.FaqPageTests -->
+      <class name="adConsent.RegressionTests.PortalUserHomePageTests">
+        <methods>
+          <include name="navigateToFAQPageTest"/>
+        </methods>
+      </class> <!-- adConsent.RegressionTests.PortalUserHomePageTests -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

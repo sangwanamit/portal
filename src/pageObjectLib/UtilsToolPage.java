@@ -16,7 +16,7 @@ import genericLib.Base;
 import genericLib.CommonLib;
 import genericLib.WebDriverCommons;
 
-public class UtilsHomePage extends Base {
+public class UtilsToolPage extends Base {
 	public static String gameName ; 
 	public static String gameID ;
 	public static String gamePID ;

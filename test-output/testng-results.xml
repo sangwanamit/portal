@@ -1,29 +1,184 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results total="2" passed="2" failed="0" skipped="0">
+<testng-results total="6" passed="4" failed="2" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2018-07-06T04:48:26Z" name="Suite" finished-at="2018-07-06T04:48:43Z" duration-ms="16732">
+  <suite started-at="2018-07-07T12:49:35Z" name="Suite" finished-at="2018-07-07T12:50:17Z" duration-ms="41171">
     <groups>
     </groups>
-    <test started-at="2018-07-06T04:48:26Z" name="Test" finished-at="2018-07-06T04:48:43Z" duration-ms="16732">
-      <class name="adConsent.RegressionTests.TootTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:adConsent.RegressionTests.TootTest@45c7e403]" started-at="2018-07-06T10:18:26Z" name="setUp" finished-at="2018-07-06T10:18:29Z" duration-ms="2312" status="PASS">
+    <test started-at="2018-07-07T12:49:35Z" name="Test" finished-at="2018-07-07T12:50:17Z" duration-ms="41171">
+      <class name="adConsent.RegressionTests.PortalUserHomePageTests">
+        <test-method signature="navigateToFAQPageTest()[pri:0, instance:adConsent.RegressionTests.PortalUserHomePageTests@ae13544]" started-at="2018-07-07T18:19:55Z" name="navigateToFAQPageTest" finished-at="2018-07-07T18:19:57Z" duration-ms="1654" status="FAIL">
+          <exception class="org.openqa.selenium.JavascriptException">
+            <message>
+              <![CDATA[Error: Unable to find owning document
+Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
+System info: host: '04927A-ASANGWAN', ip: 'fe80:0:0:0:810:c2e:8b96:c1c1%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.12.6', java.version: '10.0.1'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 60.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 75181, moz:profile: /var/folders/6p/htgzqlwn2sx..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 16.7.0, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: 2e19add6-447a-864a-8fc5-00075ff9cf3b]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.JavascriptException: Error: Unable to find owning document
+Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
+System info: host: '04927A-ASANGWAN', ip: 'fe80:0:0:0:810:c2e:8b96:c1c1%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.12.6', java.version: '10.0.1'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 60.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 75181, moz:profile: /var/folders/6p/htgzqlwn2sx..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 16.7.0, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: 2e19add6-447a-864a-8fc5-00075ff9cf3b
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:488)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
+	at org.openqa.selenium.remote.RemoteWebElement.submit(RemoteWebElement.java:87)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy12.submit(Unknown Source)
+	at pageObjectLib.PortalUserHomePage.navigateToFAQ(PortalUserHomePage.java:23)
+	at adConsent.RegressionTests.PortalUserHomePageTests.navigateToFAQPageTest(PortalUserHomePageTests.java:16)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.JavascriptException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToFAQPageTest -->
+      </class> <!-- adConsent.RegressionTests.PortalUserHomePageTests -->
+      <class name="genericLib.Base">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:genericLib.Base@38afe297]" started-at="2018-07-07T18:19:33Z" name="setUp" finished-at="2018-07-07T18:19:35Z" duration-ms="2276" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="getCredentials()[pri:0, instance:adConsent.RegressionTests.TootTest@45c7e403]" started-at="2018-07-06T10:18:29Z" name="getCredentials" finished-at="2018-07-06T10:18:34Z" duration-ms="5475" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getCredentials -->
-        <test-method signature="launchPortal()[pri:0, instance:adConsent.RegressionTests.TootTest@45c7e403]" started-at="2018-07-06T10:18:34Z" name="launchPortal" finished-at="2018-07-06T10:18:42Z" duration-ms="8437" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchPortal -->
-        <test-method is-config="true" signature="exit()[pri:0, instance:adConsent.RegressionTests.TootTest@45c7e403]" started-at="2018-07-06T10:18:42Z" name="exit" finished-at="2018-07-06T10:18:43Z" duration-ms="497" status="PASS">
+        <test-method is-config="true" signature="exit()[pri:0, instance:genericLib.Base@38afe297]" started-at="2018-07-07T18:20:17Z" name="exit" finished-at="2018-07-07T18:20:17Z" duration-ms="544" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- exit -->
-      </class> <!-- adConsent.RegressionTests.TootTest -->
+      </class> <!-- genericLib.Base -->
+      <class name="adConsent.RegressionTests.FaqPageTests">
+        <test-method signature="verifyFaqPageTitle()[pri:0, instance:adConsent.RegressionTests.FaqPageTests@6200f9cb]" started-at="2018-07-07T18:19:57Z" name="verifyFaqPageTitle" finished-at="2018-07-07T18:20:17Z" duration-ms="20011" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[Unable to locate element: .//h3[text()='FAQ']
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
+System info: host: '04927A-ASANGWAN', ip: 'fe80:0:0:0:810:c2e:8b96:c1c1%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.12.6', java.version: '10.0.1'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 60.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 75181, moz:profile: /var/folders/6p/htgzqlwn2sx..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 16.7.0, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: 2e19add6-447a-864a-8fc5-00075ff9cf3b
+*** Element info: {Using=xpath, value=.//h3[text()='FAQ']}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: .//h3[text()='FAQ']
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
+System info: host: '04927A-ASANGWAN', ip: 'fe80:0:0:0:810:c2e:8b96:c1c1%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.12.6', java.version: '10.0.1'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 60.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 75181, moz:profile: /var/folders/6p/htgzqlwn2sx..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 16.7.0, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: 2e19add6-447a-864a-8fc5-00075ff9cf3b
+*** Element info: {Using=xpath, value=.//h3[text()='FAQ']}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:488)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:317)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:419)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:309)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy12.getText(Unknown Source)
+	at pageObjectLib.FaqPage.PageTitle(FaqPage.java:12)
+	at adConsent.RegressionTests.FaqPageTests.verifyFaqPageTitle(FaqPageTests.java:17)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyFaqPageTitle -->
+      </class> <!-- adConsent.RegressionTests.FaqPageTests -->
+      <class name="adConsent.RegressionTests.PortalHomePageTests">
+        <test-method signature="launchPortal()[pri:0, instance:adConsent.RegressionTests.PortalHomePageTests@6f4a47c7]" started-at="2018-07-07T18:19:43Z" name="launchPortal" finished-at="2018-07-07T18:19:54Z" duration-ms="11411" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchPortal -->
+      </class> <!-- adConsent.RegressionTests.PortalHomePageTests -->
+      <class name="adConsent.RegressionTests.UtilsTool">
+        <test-method signature="getCredentials()[pri:0, instance:adConsent.RegressionTests.UtilsTool@2002fc1d]" started-at="2018-07-07T18:19:35Z" name="getCredentials" finished-at="2018-07-07T18:19:43Z" duration-ms="7114" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getCredentials -->
+      </class> <!-- adConsent.RegressionTests.UtilsTool -->
+      <class name="adConsent.RegressionTests.PortalSignInPageTests">
+        <test-method signature="gameSelectTest()[pri:0, instance:adConsent.RegressionTests.PortalSignInPageTests@69453e37]" started-at="2018-07-07T18:19:54Z" name="gameSelectTest" finished-at="2018-07-07T18:19:55Z" duration-ms="663" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- gameSelectTest -->
+        <test-method signature="portalSingInTest()[pri:0, instance:adConsent.RegressionTests.PortalSignInPageTests@69453e37]" started-at="2018-07-07T18:19:55Z" name="portalSingInTest" finished-at="2018-07-07T18:19:55Z" duration-ms="301" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- portalSingInTest -->
+      </class> <!-- adConsent.RegressionTests.PortalSignInPageTests -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>
