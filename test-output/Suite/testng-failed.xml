@@ -3,22 +3,18 @@
 <suite name="Failed suite [Suite]">
   <test name="Test(failed)">
     <classes>
-      <class name="genericLib.Base">
+      <class name="adConsent.RegressionTests.PortalUserHomePageTests">
         <methods>
           <include name="setUp"/>
+          <include name="navigateToFAQPageTest"/>
           <include name="exit"/>
         </methods>
-      </class> <!-- genericLib.Base -->
+      </class> <!-- adConsent.RegressionTests.PortalUserHomePageTests -->
       <class name="adConsent.RegressionTests.FaqPageTests">
         <methods>
           <include name="verifyFaqPageTitle"/>
         </methods>
       </class> <!-- adConsent.RegressionTests.FaqPageTests -->
-      <class name="adConsent.RegressionTests.PortalUserHomePageTests">
-        <methods>
-          <include name="navigateToFAQPageTest"/>
-        </methods>
-      </class> <!-- adConsent.RegressionTests.PortalUserHomePageTests -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

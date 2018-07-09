@@ -2,28 +2,32 @@
 <testng-results total="6" passed="4" failed="2" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2018-07-07T12:49:35Z" name="Suite" finished-at="2018-07-07T12:50:17Z" duration-ms="41171">
+  <suite started-at="2018-07-09T07:04:33Z" name="Suite" finished-at="2018-07-09T07:05:08Z" duration-ms="35206">
     <groups>
     </groups>
-    <test started-at="2018-07-07T12:49:35Z" name="Test" finished-at="2018-07-07T12:50:17Z" duration-ms="41171">
+    <test started-at="2018-07-09T07:04:33Z" name="Test" finished-at="2018-07-09T07:05:08Z" duration-ms="35206">
       <class name="adConsent.RegressionTests.PortalUserHomePageTests">
-        <test-method signature="navigateToFAQPageTest()[pri:0, instance:adConsent.RegressionTests.PortalUserHomePageTests@ae13544]" started-at="2018-07-07T18:19:55Z" name="navigateToFAQPageTest" finished-at="2018-07-07T18:19:57Z" duration-ms="1654" status="FAIL">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:adConsent.RegressionTests.PortalUserHomePageTests@2df3b89c]" started-at="2018-07-09T12:34:30Z" name="setUp" finished-at="2018-07-09T12:34:33Z" duration-ms="2206" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="navigateToFAQPageTest()[pri:0, instance:adConsent.RegressionTests.PortalUserHomePageTests@2df3b89c]" started-at="2018-07-09T12:34:52Z" name="navigateToFAQPageTest" finished-at="2018-07-09T12:34:54Z" duration-ms="1728" status="FAIL">
           <exception class="org.openqa.selenium.JavascriptException">
             <message>
               <![CDATA[Error: Unable to find owning document
 Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
 System info: host: '04927A-ASANGWAN', ip: 'fe80:0:0:0:810:c2e:8b96:c1c1%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.12.6', java.version: '10.0.1'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 60.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 75181, moz:profile: /var/folders/6p/htgzqlwn2sx..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 16.7.0, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
-Session ID: 2e19add6-447a-864a-8fc5-00075ff9cf3b]]>
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 60.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 89480, moz:profile: /var/folders/6p/htgzqlwn2sx..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 16.7.0, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: fbd8fc1a-2c40-e540-b16c-f53070ad962f]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.JavascriptException: Error: Unable to find owning document
 Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
 System info: host: '04927A-ASANGWAN', ip: 'fe80:0:0:0:810:c2e:8b96:c1c1%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.12.6', java.version: '10.0.1'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 60.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 75181, moz:profile: /var/folders/6p/htgzqlwn2sx..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 16.7.0, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
-Session ID: 2e19add6-447a-864a-8fc5-00075ff9cf3b
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 60.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 89480, moz:profile: /var/folders/6p/htgzqlwn2sx..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 16.7.0, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: fbd8fc1a-2c40-e540-b16c-f53070ad962f
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -74,38 +78,30 @@ Session ID: 2e19add6-447a-864a-8fc5-00075ff9cf3b
           <reporter-output>
           </reporter-output>
         </test-method> <!-- navigateToFAQPageTest -->
-      </class> <!-- adConsent.RegressionTests.PortalUserHomePageTests -->
-      <class name="genericLib.Base">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:genericLib.Base@38afe297]" started-at="2018-07-07T18:19:33Z" name="setUp" finished-at="2018-07-07T18:19:35Z" duration-ms="2276" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="exit()[pri:0, instance:genericLib.Base@38afe297]" started-at="2018-07-07T18:20:17Z" name="exit" finished-at="2018-07-07T18:20:17Z" duration-ms="544" status="PASS">
+        <test-method is-config="true" signature="exit()[pri:0, instance:adConsent.RegressionTests.PortalUserHomePageTests@2df3b89c]" started-at="2018-07-09T12:35:08Z" name="exit" finished-at="2018-07-09T12:35:09Z" duration-ms="518" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- exit -->
-      </class> <!-- genericLib.Base -->
+      </class> <!-- adConsent.RegressionTests.PortalUserHomePageTests -->
       <class name="adConsent.RegressionTests.FaqPageTests">
-        <test-method signature="verifyFaqPageTitle()[pri:0, instance:adConsent.RegressionTests.FaqPageTests@6200f9cb]" started-at="2018-07-07T18:19:57Z" name="verifyFaqPageTitle" finished-at="2018-07-07T18:20:17Z" duration-ms="20011" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchElementException">
+        <test-method signature="verifyFaqPageTitle()[pri:0, instance:adConsent.RegressionTests.FaqPageTests@13b6aecc]" started-at="2018-07-09T12:34:54Z" name="verifyFaqPageTitle" finished-at="2018-07-09T12:35:08Z" duration-ms="14357" status="FAIL">
+          <exception class="org.openqa.selenium.WebDriverException">
             <message>
-              <![CDATA[Unable to locate element: .//h3[text()='FAQ']
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+              <![CDATA[Failed to find value field
 Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
 System info: host: '04927A-ASANGWAN', ip: 'fe80:0:0:0:810:c2e:8b96:c1c1%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.12.6', java.version: '10.0.1'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 60.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 75181, moz:profile: /var/folders/6p/htgzqlwn2sx..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 16.7.0, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
-Session ID: 2e19add6-447a-864a-8fc5-00075ff9cf3b
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 60.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 89480, moz:profile: /var/folders/6p/htgzqlwn2sx..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 16.7.0, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: fbd8fc1a-2c40-e540-b16c-f53070ad962f
 *** Element info: {Using=xpath, value=.//h3[text()='FAQ']}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: .//h3[text()='FAQ']
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+              <![CDATA[org.openqa.selenium.WebDriverException: Failed to find value field
 Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
 System info: host: '04927A-ASANGWAN', ip: 'fe80:0:0:0:810:c2e:8b96:c1c1%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.12.6', java.version: '10.0.1'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 60.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 75181, moz:profile: /var/folders/6p/htgzqlwn2sx..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 16.7.0, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
-Session ID: 2e19add6-447a-864a-8fc5-00075ff9cf3b
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 60.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 89480, moz:profile: /var/folders/6p/htgzqlwn2sx..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 16.7.0, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: fbd8fc1a-2c40-e540-b16c-f53070ad962f
 *** Element info: {Using=xpath, value=.//h3[text()='FAQ']}
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
@@ -152,29 +148,29 @@ Session ID: 2e19add6-447a-864a-8fc5-00075ff9cf3b
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyFaqPageTitle -->
       </class> <!-- adConsent.RegressionTests.FaqPageTests -->
       <class name="adConsent.RegressionTests.PortalHomePageTests">
-        <test-method signature="launchPortal()[pri:0, instance:adConsent.RegressionTests.PortalHomePageTests@6f4a47c7]" started-at="2018-07-07T18:19:43Z" name="launchPortal" finished-at="2018-07-07T18:19:54Z" duration-ms="11411" status="PASS">
+        <test-method signature="launchPortal()[pri:0, instance:adConsent.RegressionTests.PortalHomePageTests@7d8704ef]" started-at="2018-07-09T12:34:43Z" name="launchPortal" finished-at="2018-07-09T12:34:51Z" duration-ms="8267" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchPortal -->
       </class> <!-- adConsent.RegressionTests.PortalHomePageTests -->
       <class name="adConsent.RegressionTests.UtilsTool">
-        <test-method signature="getCredentials()[pri:0, instance:adConsent.RegressionTests.UtilsTool@2002fc1d]" started-at="2018-07-07T18:19:35Z" name="getCredentials" finished-at="2018-07-07T18:19:43Z" duration-ms="7114" status="PASS">
+        <test-method signature="getCredentials()[pri:0, instance:adConsent.RegressionTests.UtilsTool@17f7cd29]" started-at="2018-07-09T12:34:33Z" name="getCredentials" finished-at="2018-07-09T12:34:43Z" duration-ms="9884" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getCredentials -->
       </class> <!-- adConsent.RegressionTests.UtilsTool -->
       <class name="adConsent.RegressionTests.PortalSignInPageTests">
-        <test-method signature="gameSelectTest()[pri:0, instance:adConsent.RegressionTests.PortalSignInPageTests@69453e37]" started-at="2018-07-07T18:19:54Z" name="gameSelectTest" finished-at="2018-07-07T18:19:55Z" duration-ms="663" status="PASS">
+        <test-method signature="gameSelectTest()[pri:0, instance:adConsent.RegressionTests.PortalSignInPageTests@bccb269]" started-at="2018-07-09T12:34:51Z" name="gameSelectTest" finished-at="2018-07-09T12:34:51Z" duration-ms="622" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- gameSelectTest -->
-        <test-method signature="portalSingInTest()[pri:0, instance:adConsent.RegressionTests.PortalSignInPageTests@69453e37]" started-at="2018-07-07T18:19:55Z" name="portalSingInTest" finished-at="2018-07-07T18:19:55Z" duration-ms="301" status="PASS">
+        <test-method signature="portalSingInTest()[pri:0, instance:adConsent.RegressionTests.PortalSignInPageTests@bccb269]" started-at="2018-07-09T12:34:51Z" name="portalSingInTest" finished-at="2018-07-09T12:34:52Z" duration-ms="331" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- portalSingInTest -->
