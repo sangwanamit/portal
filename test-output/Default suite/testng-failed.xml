@@ -3,17 +3,13 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="adConsent.RegressionTests.TootTest">
+      <class name="Cars">
         <methods>
-          <include name="navigateToFAQPageTest"/>
-          <include name="getCredentials"/>
-          <include name="launchPortal"/>
-          <include name="setUp"/>
-          <include name="gameSelectTest"/>
-          <include name="verifyFaqPageTitle"/>
-          <include name="exit"/>
+          <include name="t1"/>
+          <include name="t2"/>
+          <include name="t3"/>
         </methods>
-      </class> <!-- adConsent.RegressionTests.TootTest -->
+      </class> <!-- Cars -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

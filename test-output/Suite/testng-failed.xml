@@ -6,13 +6,20 @@
       <class name="adConsent.RegressionTests.PortalUserHomePageTests">
         <methods>
           <include name="setUp"/>
-          <include name="navigateToFAQPageTest"/>
           <include name="exit"/>
         </methods>
       </class> <!-- adConsent.RegressionTests.PortalUserHomePageTests -->
       <class name="adConsent.RegressionTests.FaqPageTests">
         <methods>
+          <include name="linkText7"/>
+          <include name="linkText5"/>
+          <include name="linkText8"/>
+          <include name="linkText3"/>
+          <include name="linkText6"/>
+          <include name="linkText1"/>
+          <include name="linkText4"/>
           <include name="verifyFaqPageTitle"/>
+          <include name="linkText2"/>
         </methods>
       </class> <!-- adConsent.RegressionTests.FaqPageTests -->
     </classes>

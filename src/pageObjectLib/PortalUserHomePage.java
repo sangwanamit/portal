@@ -2,6 +2,7 @@ package pageObjectLib;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -16,12 +17,13 @@ public class PortalUserHomePage extends Base {
 	
 	public void navigateToFAQ() throws Throwable {
 		
- 		WebDriverWait wait = new WebDriverWait(Base.driver, 15);
+ 		WebDriverWait wait = new WebDriverWait(driver, 15);
 		wait.until(ExpectedConditions.visibilityOf(moreOptionsFAQBtn));
+
+		Actions act = new Actions(driver);
+		act.doubleClick(moreOptionsFAQBtn).perform();
 		
 
-		moreOptionsFAQBtn.submit();
-		
 	}
 	
 }
