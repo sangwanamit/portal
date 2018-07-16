@@ -1,5 +1,10 @@
 package pageObjectLib;
 
+import java.util.LinkedList;
+import java.util.List;
+import java.util.ListIterator;
+
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.testng.Assert;
@@ -7,109 +12,113 @@ import org.testng.Assert;
 import genericLib.Base;
 
 public class FaqPage extends Base{
-@FindBy (xpath = "//h3[text()='FAQ']") WebElement pageTitle  ; 
-@FindBy (xpath = "//dt[contains(text(),'What data does')]") WebElement link1 ;
-@FindBy (xpath = "//dt[contains(text(),'How long will')]") WebElement link2 ;
-@FindBy (xpath = "//dt[contains(text(),'How do I delete')]") WebElement link3 ;
-@FindBy (xpath = "//dt[contains(text(),'How will I know')]") WebElement link4 ;
-@FindBy (xpath = "//dt[contains(text(),'Can I cancel')]") WebElement link5 ;
-@FindBy (xpath = "//dt[contains(text(),'What if I want')]") WebElement link6 ;
-@FindBy (xpath = "//dt[contains(text(),'How do I stop')]") WebElement link7 ;
-@FindBy (xpath = "//dt[contains(text(),'What if I have')]") WebElement link8 ;
+	
+@FindBy (xpath = "//div [@class='faq']/h3") WebElement pageTitle  ; 
 
-public void link1Open() {
-	action.click(link1);
+static String actLink1 = "What data does Canak Okey Plus collect?";
+static String actLink2 = "How long will it take to get my data after I make a data copy request?";
+static String actLink3 = "How do I delete my Canak Okey Plus account, including my game account data?";
+static String actLink4 = "How long does it take to process a deletion request?";
+static String actLink5 = "How will I know when my deletion or data copy request is complete?";
+static String actLink6 = "Can I cancel a deletion request?";
+static String actLink7 = "What if I want to download or delete data for other Zynga games?";
+static String actLink8 = "How do I stop receiving Canak Okey Plus marketing email?";
+static String actLink9 = "What if I have additional questions about data requests and account deletion?";
+
+
+
+
+
+public static List<WebElement> link() {
+
+List<WebElement> links =  driver.findElements(By.xpath(".//dt"));
+	
+	return links ;
+}
+
+public static List<WebElement> des() {
+
+List<WebElement> des =  driver.findElements(By.xpath(".//dd/div"));
+	
+	return des ;
+}
+
+
+public static List  getlinkTextList() {
+List linkText = new LinkedList<>();
+
+linkText.add(actLink1);
+linkText.add(actLink2);
+linkText.add(actLink3);
+linkText.add(actLink4);
+linkText.add(actLink5);
+linkText.add(actLink6);
+linkText.add(actLink7);
+linkText.add(actLink8);
+linkText.add(actLink9);
+
+return linkText;
+}
+public boolean linkTextTest(int ind) {
+	
+	WebElement element = link().get(ind);
+	String resLink = element.getText();
+	String actLink = (String) getlinkTextList().get(ind);
+	if(resLink.equals(actLink)) {
+		System.out.println("Verified Link "+ (ind+1) + ": " + resLink );
+		return true ; 
+	}
+	System.out.println(actLink+": NOT EQUALS:" +resLink+"<<ends here!");
+	return false ;
+}
+
+public boolean linkClickableAndVisibleTest(int index) {
+	WebElement link = link().get(index);
+	boolean enable =  link.isEnabled();
+	boolean visible = link.isDisplayed();
+	if(enable && visible) {
+		return true ; 
+	}else 
+		System.out.println("Link enabled: " + enable );
+		System.out.println("Link displayed: " + visible );
+	
+	return false;
+		
+
+
+}
+
+public boolean linkOpen(int index) {
+	
+	while(des().get(index).isDisplayed()) {
+		System.out.println("Link already open");
+		return false ;
+	}
+	
+	WebElement link = link().get(index);
+	link.click();
+	if(des().get(index).isDisplayed()) {
+		return true ; 
+	}
+	System.out.println("Description status " + des().get(index).isDisplayed());
+	return false;
 	
 }
 
-public void link2Open() {
-	action.click(link2);
+
+public boolean linkClose(int index) throws InterruptedException {
+	WebElement link = link().get(index);
+	if(des().get(index).isDisplayed())
+	{
+	link.click();
+	Thread.sleep(1000);
+		if (des().get(index).isDisplayed()) {
+			return false;
+		}else return true ;
+	}
 	
-}
-
-public void link3Open() {
-	action.click(link3);
-	
-}
-public void link4Open() {
-	action.click(link4);
-	
-}
-public void link5Open() {
-	action.click(link5);
-	
-}
-
-public void link6Open() {
-	action.click(link6);
-}
-
-public void link7Open() {
-	action.click(link7);
-	
-}
-public void link8Open() {
-	action.click(link8);
-	
-}
-
-
-
-public String PageTitle() {
-	
-	String actTitle = pageTitle.getText();
-	return actTitle ; 
+	System.out.println("Skipped if block! link seems to be already closed!");
+	return false ;
 
 }
-
-public String link1() {
-	
-	String text = link1.getText();
-	return text ; 
-
-}
-public String link2() {
-	
-	String text = link2.getText();
-	return text ; 
-
-}
-public String link3() {
-	
-	String text = link3.getText();
-	return text ; 
-
-}
-public String link4() {
-	
-	String text = link4.getText();
-	return text ; 
-
-}
-public String link5() {
-	
-	String text = link5.getText();
-	return text ; 
-
-}
-public String link6() {
-	
-	String text = link6.getText();
-	return text ; 
-
-}
-public String link7() {
-	
-	String text = link7.getText();
-	return text ; 
-
-}
-public String link8() {
-	
-	String text = link8.getText();
-	return text ; 
-
-}
-
-
 }

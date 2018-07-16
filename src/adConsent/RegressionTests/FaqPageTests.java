@@ -9,93 +9,215 @@ import genericLib.Base;
 import pageObjectLib.FaqPage;
 
 public class FaqPageTests extends Base{
+	
 	FaqPage pf = PageFactory.initElements(driver,FaqPage.class);
+	@Test (priority = 0)
+	public void verifyLinkText_01() {
+		
+		
+		Assert.assertTrue(pf.linkTextTest(0));
+	
+	}
 
-	@Test (priority =0)
-	public void verifyFaqPageTitle() {
-	Assert.assertEquals("FAQ1",pf.PageTitle());
+	@Test (priority =1)
+	public void verifyLinkText_02() {
+		
+		Assert.assertTrue(pf.linkTextTest(1));
+	
+	}
+	@Test (priority =2)
+	public void verifyLinkText_03() {
+		
+		Assert.assertTrue(pf.linkTextTest(2));
+	
+	}
+	@Test (priority =3)
+	public void verifyLinkText_04() {
+		
+		Assert.assertTrue(pf.linkTextTest(3));
+	
+	}
+	@Test (priority =4)
+	public void verifyLinkText_05() {
+		
+		Assert.assertTrue(pf.linkTextTest(4));
+	
+	}
+	@Test (priority =5)
+	public void verifyLinkText_06() {
+		
+		Assert.assertTrue(pf.linkTextTest(5));
+	
+	}
+	@Test (priority =6)
+	public void verifyLinkText_07() {
+		
+		Assert.assertTrue(pf.linkTextTest(6));
+	
+	}
+	@Test (priority =7)
+	public void verifyLinkText_08() {
+		
+		Assert.assertTrue(pf.linkTextTest(7));
+	
+	}
+	@Test (priority =8)
+	public void verifyLinkText_09() {
+		
+		Assert.assertTrue(pf.linkTextTest(8));
+	
+	}
+
+	@Test 
+	public void linkVisibleAndEnableTest_01() {
+		
+		Assert.assertTrue(pf.linkClickableAndVisibleTest(0));
+	
+	}
+	@Test 
+	public void linkVisibleAndEnableTest_02() {
+		
+		Assert.assertTrue(pf.linkClickableAndVisibleTest(1));
+	
+	}@Test 
+	public void linkVisibleAndEnableTest_03() {
+		
+		Assert.assertTrue(pf.linkClickableAndVisibleTest(2));
+	
+	}@Test 
+	public void linkVisibleAndEnableTest_04() {
+		
+		Assert.assertTrue(pf.linkClickableAndVisibleTest(3));
+	
+	}@Test 
+	public void linkVisibleAndEnableTest_05() {
+		
+		Assert.assertTrue(pf.linkClickableAndVisibleTest(4));
+	
+	}@Test 
+	public void linkVisibleAndEnableTest_06() {
+		
+		Assert.assertTrue(pf.linkClickableAndVisibleTest(5));
+	
+	}@Test 
+	public void linkVisibleAndEnableTest_07() {
+		
+		Assert.assertTrue(pf.linkClickableAndVisibleTest(6));
+	
+	}@Test 
+	public void linkVisibleAndEnableTest_08() {
+		
+		Assert.assertTrue(pf.linkClickableAndVisibleTest(7));
+	
 	}
 	
-	@Test (priority = 1) 
-	public void linkText1(){
-		System.out.println(pf.link1());
-	}
+	@Test 
+	public void linkVisibleAndEnableTest_09() {
+
+		
+		Assert.assertTrue(pf.linkClickableAndVisibleTest(8));
 	
-	@Test (priority = 2) 
-	public void linkText2(){
-		System.out.println(pf.link2());
-	}
-	
-	@Test (priority = 3) 
-	public void linkText3(){
-		System.out.println(pf.link3());
-	}
-	@Test (priority = 4) 
-	public void linkText4(){
-		System.out.println(pf.link4());
-	}
-	
-	@Test (priority = 5) 
-	public void linkText5(){
-		System.out.println(pf.link5());
-	}
-	
-	@Test (priority = 6) 
-	public void linkText6(){
-		System.out.println(pf.link6());
-	}
-	@Test (priority = 7) 
-	public void linkText7(){
-		System.out.println(pf.link7());
-	}
-	
-	@Test (priority = 8) 
-	public void linkText8(){
-		System.out.println(pf.link8());
-	}
-	
-	
-	@Test (priority = 17)
-	public void link1() {
-		pf.link1Open();
 	}
 	
 	@Test (priority = 10)
-	public void link2() {
-		pf.link2Open();
+	public void linkOpenTest_01() {
+		Assert.assertTrue(pf.linkOpen(0));
 	}
-	
 	@Test (priority = 11)
-	public void link3() {
-		pf.link3Open();
+	public void linkOpenTest_02() {
+		Assert.assertTrue(pf.linkOpen(1));
 	}
 	
 	@Test (priority = 12)
-	public void link4() {
-		pf.link4Open();
+	public void linkOpenTest_03() {
+		Assert.assertTrue(pf.linkOpen(2));
 	}
 	
 	@Test (priority = 13)
-	public void link5() {
-		pf.link5Open();
+	public void linkOpenTest_04() {
+		Assert.assertTrue(pf.linkOpen(3));
 	}
 	
 	@Test (priority = 14)
-	public void link6() {
-		pf.link6Open();
+	public void linkOpenTest_05() {
+		Assert.assertTrue(pf.linkOpen(4));
+
 	}
 	
 	@Test (priority = 15)
-	public void link7() {
-		pf.link7Open();
+	public void linkOpenTest_06() {
+		Assert.assertTrue(pf.linkOpen(5));
+
 	}
 	
 	@Test (priority = 16)
-	public void link8() {
-		pf.link8Open();
+	public void linkOpenTest_07() {
+		Assert.assertTrue(pf.linkOpen(6));
+
 	}
 	
+	@Test (priority = 17)
+	public void linkOpenTest_08() {
+		Assert.assertTrue(pf.linkOpen(7));
+
+	}
 	
+	@Test (priority = 18)
+	public void linkOpenTest_09() {
+
+		Assert.assertTrue(pf.linkOpen(8));
+
+	}
 	
+	@Test (priority = 19)
+	public void linkCloseTest_01() throws InterruptedException {
+		Assert.assertTrue(pf.linkClose(0));
+		
+	}
+	
+	@Test (priority = 20)
+	public void linkCloseTest_02() throws InterruptedException {
+		Assert.assertTrue(pf.linkClose(1));
+		
+	}
+	@Test (priority = 21)
+	public void linkCloseTest_03() throws InterruptedException {
+		Assert.assertTrue(pf.linkClose(2));
+		
+	}
+	
+	@Test (priority = 22)
+	public void linkCloseTest_04() throws InterruptedException {
+		Assert.assertTrue(pf.linkClose(3));
+		
+	}
+	@Test (priority = 23)
+	public void linkCloseTest_05() throws InterruptedException {
+		Assert.assertTrue(pf.linkClose(4));
+		
+	}
+	
+	@Test (priority = 24)
+	public void linkCloseTest_06() throws InterruptedException {
+		Assert.assertTrue(pf.linkClose(5));
+		
+	}
+	@Test (priority = 25)
+	public void linkCloseTest_07() throws InterruptedException {
+		Assert.assertTrue(pf.linkClose(6));
+		
+	}
+	
+	@Test (priority = 26)
+	public void linkCloseTest_08() throws InterruptedException {
+		Assert.assertTrue(pf.linkClose(7));
+		
+	}
+	
+	@Test (priority = 27)
+	public void linkCloseTest_09() throws InterruptedException {
+		Assert.assertTrue(pf.linkClose(8));
+		
+	}
 	
 }

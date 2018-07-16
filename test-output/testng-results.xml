@@ -1,428 +1,189 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results total="22" passed="13" failed="9" skipped="0">
+<testng-results total="41" passed="41" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2018-07-11T19:57:19Z" name="Suite" finished-at="2018-07-11T19:57:38Z" duration-ms="18381">
+  <suite started-at="2018-07-16T19:15:46Z" name="Suite" finished-at="2018-07-16T19:16:28Z" duration-ms="41900">
     <groups>
     </groups>
-    <test started-at="2018-07-11T19:57:19Z" name="Test" finished-at="2018-07-11T19:57:38Z" duration-ms="18381">
+    <test started-at="2018-07-16T19:15:46Z" name="Test" finished-at="2018-07-16T19:16:28Z" duration-ms="41900">
       <class name="adConsent.RegressionTests.PortalUserHomePageTests">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:adConsent.RegressionTests.PortalUserHomePageTests@3541cb24]" started-at="2018-07-12T01:27:17Z" name="setUp" finished-at="2018-07-12T01:27:19Z" duration-ms="2600" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:adConsent.RegressionTests.PortalUserHomePageTests@19d481b]" started-at="2018-07-17T00:45:43Z" name="setUp" finished-at="2018-07-17T00:45:46Z" duration-ms="3169" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="navigateToFAQPageTest()[pri:0, instance:adConsent.RegressionTests.PortalUserHomePageTests@3541cb24]" started-at="2018-07-12T01:27:36Z" name="navigateToFAQPageTest" finished-at="2018-07-12T01:27:38Z" duration-ms="1823" status="PASS">
+        <test-method signature="navigateToFAQPageTest()[pri:0, instance:adConsent.RegressionTests.PortalUserHomePageTests@19d481b]" started-at="2018-07-17T00:46:07Z" name="navigateToFAQPageTest" finished-at="2018-07-17T00:46:13Z" duration-ms="5938" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- navigateToFAQPageTest -->
-        <test-method is-config="true" signature="exit()[pri:0, instance:adConsent.RegressionTests.PortalUserHomePageTests@3541cb24]" started-at="2018-07-12T01:27:38Z" name="exit" finished-at="2018-07-12T01:27:39Z" duration-ms="614" status="PASS">
+        <test-method is-config="true" signature="exit()[pri:0, instance:adConsent.RegressionTests.PortalUserHomePageTests@19d481b]" started-at="2018-07-17T00:46:28Z" name="exit" finished-at="2018-07-17T00:46:28Z" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- exit -->
       </class> <!-- adConsent.RegressionTests.PortalUserHomePageTests -->
       <class name="adConsent.RegressionTests.FaqPageTests">
-        <test-method signature="verifyFaqPageTitle()[pri:0, instance:adConsent.RegressionTests.FaqPageTests@4d910fd6]" started-at="2018-07-12T01:27:38Z" name="verifyFaqPageTitle" finished-at="2018-07-12T01:27:38Z" duration-ms="1" status="FAIL">
-          <exception class="java.lang.NullPointerException">
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy11.getText(Unknown Source)
-	at pageObjectLib.FaqPage.PageTitle(FaqPage.java:60)
-	at adConsent.RegressionTests.FaqPageTests.verifyFaqPageTitle(FaqPageTests.java:16)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+        <test-method signature="linkVisibleAndEnableTest_01()[pri:0, instance:adConsent.RegressionTests.FaqPageTests@74455848]" started-at="2018-07-17T00:46:13Z" name="linkVisibleAndEnableTest_01" finished-at="2018-07-17T00:46:13Z" duration-ms="38" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyFaqPageTitle -->
-        <test-method signature="linkText1()[pri:0, instance:adConsent.RegressionTests.FaqPageTests@4d910fd6]" started-at="2018-07-12T01:27:38Z" name="linkText1" finished-at="2018-07-12T01:27:38Z" duration-ms="1" status="FAIL">
-          <exception class="java.lang.NullPointerException">
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy11.getText(Unknown Source)
-	at pageObjectLib.FaqPage.link1(FaqPage.java:67)
-	at adConsent.RegressionTests.FaqPageTests.linkText1(FaqPageTests.java:21)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+        </test-method> <!-- linkVisibleAndEnableTest_01 -->
+        <test-method signature="linkVisibleAndEnableTest_02()[pri:0, instance:adConsent.RegressionTests.FaqPageTests@74455848]" started-at="2018-07-17T00:46:13Z" name="linkVisibleAndEnableTest_02" finished-at="2018-07-17T00:46:13Z" duration-ms="36" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- linkText1 -->
-        <test-method signature="linkText2()[pri:0, instance:adConsent.RegressionTests.FaqPageTests@4d910fd6]" started-at="2018-07-12T01:27:38Z" name="linkText2" finished-at="2018-07-12T01:27:38Z" duration-ms="0" status="FAIL">
-          <exception class="java.lang.NullPointerException">
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy11.getText(Unknown Source)
-	at pageObjectLib.FaqPage.link2(FaqPage.java:73)
-	at adConsent.RegressionTests.FaqPageTests.linkText2(FaqPageTests.java:26)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+        </test-method> <!-- linkVisibleAndEnableTest_02 -->
+        <test-method signature="linkVisibleAndEnableTest_03()[pri:0, instance:adConsent.RegressionTests.FaqPageTests@74455848]" started-at="2018-07-17T00:46:13Z" name="linkVisibleAndEnableTest_03" finished-at="2018-07-17T00:46:13Z" duration-ms="33" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- linkText2 -->
-        <test-method signature="linkText3()[pri:0, instance:adConsent.RegressionTests.FaqPageTests@4d910fd6]" started-at="2018-07-12T01:27:38Z" name="linkText3" finished-at="2018-07-12T01:27:38Z" duration-ms="1" status="FAIL">
-          <exception class="java.lang.NullPointerException">
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy11.getText(Unknown Source)
-	at pageObjectLib.FaqPage.link3(FaqPage.java:79)
-	at adConsent.RegressionTests.FaqPageTests.linkText3(FaqPageTests.java:31)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+        </test-method> <!-- linkVisibleAndEnableTest_03 -->
+        <test-method signature="linkVisibleAndEnableTest_04()[pri:0, instance:adConsent.RegressionTests.FaqPageTests@74455848]" started-at="2018-07-17T00:46:13Z" name="linkVisibleAndEnableTest_04" finished-at="2018-07-17T00:46:13Z" duration-ms="31" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- linkText3 -->
-        <test-method signature="linkText4()[pri:0, instance:adConsent.RegressionTests.FaqPageTests@4d910fd6]" started-at="2018-07-12T01:27:38Z" name="linkText4" finished-at="2018-07-12T01:27:38Z" duration-ms="1" status="FAIL">
-          <exception class="java.lang.NullPointerException">
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy11.getText(Unknown Source)
-	at pageObjectLib.FaqPage.link4(FaqPage.java:85)
-	at adConsent.RegressionTests.FaqPageTests.linkText4(FaqPageTests.java:35)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+        </test-method> <!-- linkVisibleAndEnableTest_04 -->
+        <test-method signature="linkVisibleAndEnableTest_05()[pri:0, instance:adConsent.RegressionTests.FaqPageTests@74455848]" started-at="2018-07-17T00:46:13Z" name="linkVisibleAndEnableTest_05" finished-at="2018-07-17T00:46:13Z" duration-ms="30" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- linkText4 -->
-        <test-method signature="linkText5()[pri:0, instance:adConsent.RegressionTests.FaqPageTests@4d910fd6]" started-at="2018-07-12T01:27:38Z" name="linkText5" finished-at="2018-07-12T01:27:38Z" duration-ms="1" status="FAIL">
-          <exception class="java.lang.NullPointerException">
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy11.getText(Unknown Source)
-	at pageObjectLib.FaqPage.link5(FaqPage.java:91)
-	at adConsent.RegressionTests.FaqPageTests.linkText5(FaqPageTests.java:40)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+        </test-method> <!-- linkVisibleAndEnableTest_05 -->
+        <test-method signature="linkVisibleAndEnableTest_06()[pri:0, instance:adConsent.RegressionTests.FaqPageTests@74455848]" started-at="2018-07-17T00:46:13Z" name="linkVisibleAndEnableTest_06" finished-at="2018-07-17T00:46:14Z" duration-ms="33" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- linkText5 -->
-        <test-method signature="linkText6()[pri:0, instance:adConsent.RegressionTests.FaqPageTests@4d910fd6]" started-at="2018-07-12T01:27:38Z" name="linkText6" finished-at="2018-07-12T01:27:38Z" duration-ms="0" status="FAIL">
-          <exception class="java.lang.NullPointerException">
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy11.getText(Unknown Source)
-	at pageObjectLib.FaqPage.link6(FaqPage.java:97)
-	at adConsent.RegressionTests.FaqPageTests.linkText6(FaqPageTests.java:45)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+        </test-method> <!-- linkVisibleAndEnableTest_06 -->
+        <test-method signature="linkVisibleAndEnableTest_07()[pri:0, instance:adConsent.RegressionTests.FaqPageTests@74455848]" started-at="2018-07-17T00:46:14Z" name="linkVisibleAndEnableTest_07" finished-at="2018-07-17T00:46:14Z" duration-ms="34" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- linkText6 -->
-        <test-method signature="linkText7()[pri:0, instance:adConsent.RegressionTests.FaqPageTests@4d910fd6]" started-at="2018-07-12T01:27:38Z" name="linkText7" finished-at="2018-07-12T01:27:38Z" duration-ms="1" status="FAIL">
-          <exception class="java.lang.NullPointerException">
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy11.getText(Unknown Source)
-	at pageObjectLib.FaqPage.link7(FaqPage.java:103)
-	at adConsent.RegressionTests.FaqPageTests.linkText7(FaqPageTests.java:49)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+        </test-method> <!-- linkVisibleAndEnableTest_07 -->
+        <test-method signature="linkVisibleAndEnableTest_08()[pri:0, instance:adConsent.RegressionTests.FaqPageTests@74455848]" started-at="2018-07-17T00:46:14Z" name="linkVisibleAndEnableTest_08" finished-at="2018-07-17T00:46:14Z" duration-ms="41" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- linkText7 -->
-        <test-method signature="linkText8()[pri:0, instance:adConsent.RegressionTests.FaqPageTests@4d910fd6]" started-at="2018-07-12T01:27:38Z" name="linkText8" finished-at="2018-07-12T01:27:38Z" duration-ms="1" status="FAIL">
-          <exception class="java.lang.NullPointerException">
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy11.getText(Unknown Source)
-	at pageObjectLib.FaqPage.link8(FaqPage.java:109)
-	at adConsent.RegressionTests.FaqPageTests.linkText8(FaqPageTests.java:54)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+        </test-method> <!-- linkVisibleAndEnableTest_08 -->
+        <test-method signature="linkVisibleAndEnableTest_09()[pri:0, instance:adConsent.RegressionTests.FaqPageTests@74455848]" started-at="2018-07-17T00:46:14Z" name="linkVisibleAndEnableTest_09" finished-at="2018-07-17T00:46:14Z" duration-ms="35" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- linkText8 -->
-        <test-method signature="link2()[pri:0, instance:adConsent.RegressionTests.FaqPageTests@4d910fd6]" started-at="2018-07-12T01:27:38Z" name="link2" finished-at="2018-07-12T01:27:38Z" duration-ms="1" status="PASS">
+        </test-method> <!-- linkVisibleAndEnableTest_09 -->
+        <test-method signature="verifyLinkText_01()[pri:0, instance:adConsent.RegressionTests.FaqPageTests@74455848]" started-at="2018-07-17T00:46:14Z" name="verifyLinkText_01" finished-at="2018-07-17T00:46:14Z" duration-ms="15" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- link2 -->
-        <test-method signature="link3()[pri:0, instance:adConsent.RegressionTests.FaqPageTests@4d910fd6]" started-at="2018-07-12T01:27:38Z" name="link3" finished-at="2018-07-12T01:27:38Z" duration-ms="1" status="PASS">
+        </test-method> <!-- verifyLinkText_01 -->
+        <test-method signature="verifyLinkText_02()[pri:0, instance:adConsent.RegressionTests.FaqPageTests@74455848]" started-at="2018-07-17T00:46:14Z" name="verifyLinkText_02" finished-at="2018-07-17T00:46:14Z" duration-ms="15" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- link3 -->
-        <test-method signature="link4()[pri:0, instance:adConsent.RegressionTests.FaqPageTests@4d910fd6]" started-at="2018-07-12T01:27:38Z" name="link4" finished-at="2018-07-12T01:27:38Z" duration-ms="0" status="PASS">
+        </test-method> <!-- verifyLinkText_02 -->
+        <test-method signature="verifyLinkText_03()[pri:0, instance:adConsent.RegressionTests.FaqPageTests@74455848]" started-at="2018-07-17T00:46:14Z" name="verifyLinkText_03" finished-at="2018-07-17T00:46:14Z" duration-ms="13" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- link4 -->
-        <test-method signature="link5()[pri:0, instance:adConsent.RegressionTests.FaqPageTests@4d910fd6]" started-at="2018-07-12T01:27:38Z" name="link5" finished-at="2018-07-12T01:27:38Z" duration-ms="1" status="PASS">
+        </test-method> <!-- verifyLinkText_03 -->
+        <test-method signature="verifyLinkText_04()[pri:0, instance:adConsent.RegressionTests.FaqPageTests@74455848]" started-at="2018-07-17T00:46:14Z" name="verifyLinkText_04" finished-at="2018-07-17T00:46:14Z" duration-ms="14" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- link5 -->
-        <test-method signature="link6()[pri:0, instance:adConsent.RegressionTests.FaqPageTests@4d910fd6]" started-at="2018-07-12T01:27:38Z" name="link6" finished-at="2018-07-12T01:27:38Z" duration-ms="1" status="PASS">
+        </test-method> <!-- verifyLinkText_04 -->
+        <test-method signature="verifyLinkText_05()[pri:0, instance:adConsent.RegressionTests.FaqPageTests@74455848]" started-at="2018-07-17T00:46:14Z" name="verifyLinkText_05" finished-at="2018-07-17T00:46:14Z" duration-ms="15" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- link6 -->
-        <test-method signature="link7()[pri:0, instance:adConsent.RegressionTests.FaqPageTests@4d910fd6]" started-at="2018-07-12T01:27:38Z" name="link7" finished-at="2018-07-12T01:27:38Z" duration-ms="1" status="PASS">
+        </test-method> <!-- verifyLinkText_05 -->
+        <test-method signature="verifyLinkText_06()[pri:0, instance:adConsent.RegressionTests.FaqPageTests@74455848]" started-at="2018-07-17T00:46:14Z" name="verifyLinkText_06" finished-at="2018-07-17T00:46:14Z" duration-ms="15" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- link7 -->
-        <test-method signature="link8()[pri:0, instance:adConsent.RegressionTests.FaqPageTests@4d910fd6]" started-at="2018-07-12T01:27:38Z" name="link8" finished-at="2018-07-12T01:27:38Z" duration-ms="1" status="PASS">
+        </test-method> <!-- verifyLinkText_06 -->
+        <test-method signature="verifyLinkText_07()[pri:0, instance:adConsent.RegressionTests.FaqPageTests@74455848]" started-at="2018-07-17T00:46:14Z" name="verifyLinkText_07" finished-at="2018-07-17T00:46:14Z" duration-ms="14" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- link8 -->
-        <test-method signature="link1()[pri:0, instance:adConsent.RegressionTests.FaqPageTests@4d910fd6]" started-at="2018-07-12T01:27:38Z" name="link1" finished-at="2018-07-12T01:27:38Z" duration-ms="0" status="PASS">
+        </test-method> <!-- verifyLinkText_07 -->
+        <test-method signature="verifyLinkText_08()[pri:0, instance:adConsent.RegressionTests.FaqPageTests@74455848]" started-at="2018-07-17T00:46:14Z" name="verifyLinkText_08" finished-at="2018-07-17T00:46:14Z" duration-ms="13" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- link1 -->
+        </test-method> <!-- verifyLinkText_08 -->
+        <test-method signature="verifyLinkText_09()[pri:0, instance:adConsent.RegressionTests.FaqPageTests@74455848]" started-at="2018-07-17T00:46:14Z" name="verifyLinkText_09" finished-at="2018-07-17T00:46:14Z" duration-ms="13" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLinkText_09 -->
+        <test-method signature="linkOpenTest_01()[pri:0, instance:adConsent.RegressionTests.FaqPageTests@74455848]" started-at="2018-07-17T00:46:14Z" name="linkOpenTest_01" finished-at="2018-07-17T00:46:14Z" duration-ms="273" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- linkOpenTest_01 -->
+        <test-method signature="linkOpenTest_02()[pri:0, instance:adConsent.RegressionTests.FaqPageTests@74455848]" started-at="2018-07-17T00:46:14Z" name="linkOpenTest_02" finished-at="2018-07-17T00:46:14Z" duration-ms="302" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- linkOpenTest_02 -->
+        <test-method signature="linkOpenTest_03()[pri:0, instance:adConsent.RegressionTests.FaqPageTests@74455848]" started-at="2018-07-17T00:46:14Z" name="linkOpenTest_03" finished-at="2018-07-17T00:46:15Z" duration-ms="272" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- linkOpenTest_03 -->
+        <test-method signature="linkOpenTest_04()[pri:0, instance:adConsent.RegressionTests.FaqPageTests@74455848]" started-at="2018-07-17T00:46:15Z" name="linkOpenTest_04" finished-at="2018-07-17T00:46:15Z" duration-ms="279" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- linkOpenTest_04 -->
+        <test-method signature="linkOpenTest_05()[pri:0, instance:adConsent.RegressionTests.FaqPageTests@74455848]" started-at="2018-07-17T00:46:15Z" name="linkOpenTest_05" finished-at="2018-07-17T00:46:15Z" duration-ms="276" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- linkOpenTest_05 -->
+        <test-method signature="linkOpenTest_06()[pri:0, instance:adConsent.RegressionTests.FaqPageTests@74455848]" started-at="2018-07-17T00:46:15Z" name="linkOpenTest_06" finished-at="2018-07-17T00:46:15Z" duration-ms="271" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- linkOpenTest_06 -->
+        <test-method signature="linkOpenTest_07()[pri:0, instance:adConsent.RegressionTests.FaqPageTests@74455848]" started-at="2018-07-17T00:46:15Z" name="linkOpenTest_07" finished-at="2018-07-17T00:46:16Z" duration-ms="272" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- linkOpenTest_07 -->
+        <test-method signature="linkOpenTest_08()[pri:0, instance:adConsent.RegressionTests.FaqPageTests@74455848]" started-at="2018-07-17T00:46:16Z" name="linkOpenTest_08" finished-at="2018-07-17T00:46:16Z" duration-ms="293" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- linkOpenTest_08 -->
+        <test-method signature="linkOpenTest_09()[pri:0, instance:adConsent.RegressionTests.FaqPageTests@74455848]" started-at="2018-07-17T00:46:16Z" name="linkOpenTest_09" finished-at="2018-07-17T00:46:16Z" duration-ms="272" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- linkOpenTest_09 -->
+        <test-method signature="linkCloseTest_01()[pri:0, instance:adConsent.RegressionTests.FaqPageTests@74455848]" started-at="2018-07-17T00:46:16Z" name="linkCloseTest_01" finished-at="2018-07-17T00:46:18Z" duration-ms="1283" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- linkCloseTest_01 -->
+        <test-method signature="linkCloseTest_02()[pri:0, instance:adConsent.RegressionTests.FaqPageTests@74455848]" started-at="2018-07-17T00:46:18Z" name="linkCloseTest_02" finished-at="2018-07-17T00:46:19Z" duration-ms="1279" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- linkCloseTest_02 -->
+        <test-method signature="linkCloseTest_03()[pri:0, instance:adConsent.RegressionTests.FaqPageTests@74455848]" started-at="2018-07-17T00:46:19Z" name="linkCloseTest_03" finished-at="2018-07-17T00:46:20Z" duration-ms="1289" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- linkCloseTest_03 -->
+        <test-method signature="linkCloseTest_04()[pri:0, instance:adConsent.RegressionTests.FaqPageTests@74455848]" started-at="2018-07-17T00:46:20Z" name="linkCloseTest_04" finished-at="2018-07-17T00:46:21Z" duration-ms="1280" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- linkCloseTest_04 -->
+        <test-method signature="linkCloseTest_05()[pri:0, instance:adConsent.RegressionTests.FaqPageTests@74455848]" started-at="2018-07-17T00:46:21Z" name="linkCloseTest_05" finished-at="2018-07-17T00:46:23Z" duration-ms="1277" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- linkCloseTest_05 -->
+        <test-method signature="linkCloseTest_06()[pri:0, instance:adConsent.RegressionTests.FaqPageTests@74455848]" started-at="2018-07-17T00:46:23Z" name="linkCloseTest_06" finished-at="2018-07-17T00:46:24Z" duration-ms="1274" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- linkCloseTest_06 -->
+        <test-method signature="linkCloseTest_07()[pri:0, instance:adConsent.RegressionTests.FaqPageTests@74455848]" started-at="2018-07-17T00:46:24Z" name="linkCloseTest_07" finished-at="2018-07-17T00:46:25Z" duration-ms="1275" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- linkCloseTest_07 -->
+        <test-method signature="linkCloseTest_08()[pri:0, instance:adConsent.RegressionTests.FaqPageTests@74455848]" started-at="2018-07-17T00:46:25Z" name="linkCloseTest_08" finished-at="2018-07-17T00:46:27Z" duration-ms="1274" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- linkCloseTest_08 -->
+        <test-method signature="linkCloseTest_09()[pri:0, instance:adConsent.RegressionTests.FaqPageTests@74455848]" started-at="2018-07-17T00:46:27Z" name="linkCloseTest_09" finished-at="2018-07-17T00:46:28Z" duration-ms="1275" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- linkCloseTest_09 -->
       </class> <!-- adConsent.RegressionTests.FaqPageTests -->
       <class name="adConsent.RegressionTests.PortalHomePageTests">
-        <test-method signature="launchPortal()[pri:0, instance:adConsent.RegressionTests.PortalHomePageTests@140c9f39]" started-at="2018-07-12T01:27:27Z" name="launchPortal" finished-at="2018-07-12T01:27:35Z" duration-ms="7323" status="PASS">
+        <test-method signature="launchPortal()[pri:0, instance:adConsent.RegressionTests.PortalHomePageTests@2e55dd0c]" started-at="2018-07-17T00:45:54Z" name="launchPortal" finished-at="2018-07-17T00:46:06Z" duration-ms="12666" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchPortal -->
       </class> <!-- adConsent.RegressionTests.PortalHomePageTests -->
       <class name="adConsent.RegressionTests.UtilsTool">
-        <test-method signature="getCredentials()[pri:0, instance:adConsent.RegressionTests.UtilsTool@1f97cf0d]" started-at="2018-07-12T01:27:19Z" name="getCredentials" finished-at="2018-07-12T01:27:27Z" duration-ms="8240" status="PASS">
+        <test-method signature="getCredentials()[pri:0, instance:adConsent.RegressionTests.UtilsTool@2cd2a21f]" started-at="2018-07-17T00:45:46Z" name="getCredentials" finished-at="2018-07-17T00:45:54Z" duration-ms="7856" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getCredentials -->
       </class> <!-- adConsent.RegressionTests.UtilsTool -->
       <class name="adConsent.RegressionTests.PortalSignInPageTests">
-        <test-method signature="gameSelectTest()[pri:0, instance:adConsent.RegressionTests.PortalSignInPageTests@51f116b8]" started-at="2018-07-12T01:27:35Z" name="gameSelectTest" finished-at="2018-07-12T01:27:35Z" duration-ms="618" status="PASS">
+        <test-method signature="gameSelectTest()[pri:0, instance:adConsent.RegressionTests.PortalSignInPageTests@3d1cfad4]" started-at="2018-07-17T00:46:06Z" name="gameSelectTest" finished-at="2018-07-17T00:46:07Z" duration-ms="644" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- gameSelectTest -->
-        <test-method signature="portalSingInTest()[pri:0, instance:adConsent.RegressionTests.PortalSignInPageTests@51f116b8]" started-at="2018-07-12T01:27:35Z" name="portalSingInTest" finished-at="2018-07-12T01:27:36Z" duration-ms="327" status="PASS">
+        <test-method signature="portalSingInTest()[pri:0, instance:adConsent.RegressionTests.PortalSignInPageTests@3d1cfad4]" started-at="2018-07-17T00:46:07Z" name="portalSingInTest" finished-at="2018-07-17T00:46:07Z" duration-ms="300" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- portalSingInTest -->

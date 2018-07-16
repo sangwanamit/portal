@@ -11,15 +11,15 @@
       </class> <!-- adConsent.RegressionTests.PortalUserHomePageTests -->
       <class name="adConsent.RegressionTests.FaqPageTests">
         <methods>
-          <include name="linkText7"/>
-          <include name="linkText5"/>
-          <include name="linkText8"/>
-          <include name="linkText3"/>
-          <include name="linkText6"/>
-          <include name="linkText1"/>
-          <include name="linkText4"/>
-          <include name="verifyFaqPageTitle"/>
-          <include name="linkText2"/>
+          <include name="linkCloseTest_06"/>
+          <include name="linkCloseTest_03"/>
+          <include name="linkCloseTest_08"/>
+          <include name="linkCloseTest_05"/>
+          <include name="linkCloseTest_02"/>
+          <include name="linkCloseTest_04"/>
+          <include name="linkCloseTest_01"/>
+          <include name="linkCloseTest_07"/>
+          <include name="linkCloseTest_09"/>
         </methods>
       </class> <!-- adConsent.RegressionTests.FaqPageTests -->
     </classes>

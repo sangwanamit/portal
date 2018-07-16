@@ -33,7 +33,7 @@ public class Base {
 		
 		@AfterSuite
 		public void exit() {
-		driver.quit();
+	//	driver.quit();
 		
 			
 		}

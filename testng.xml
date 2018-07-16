@@ -3,14 +3,12 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
     <classes>
-      <class name="adConsent.RegressionTests.UtilsTool"/>
-            <class name="adConsent.RegressionTests.PortalHomePageTests"/>
-            <class name="adConsent.RegressionTests.PortalSignInPageTests"/>
-            <class name="adConsent.RegressionTests.PortalUserHomePageTests"/>
-            <class name="adConsent.RegressionTests.FaqPageTests"/>
-      
-      
-      
+          <class name="adConsent.RegressionTests.UtilsTool"/>
+          <class name="adConsent.RegressionTests.PortalHomePageTests"/>
+          <class name="adConsent.RegressionTests.PortalSignInPageTests"/>
+      <class name="adConsent.RegressionTests.PortalUserHomePageTests"/>
+      <class name="adConsent.RegressionTests.FaqPageTests"/>
+      <class name="pageObjectLib.FaqPage"/>
       <class name="genericLib.Base"/>
     </classes>
   </test> <!-- Test -->

@@ -17,13 +17,24 @@ public class PortalUserHomePage extends Base {
 	
 	public void navigateToFAQ() throws Throwable {
 		
- 		WebDriverWait wait = new WebDriverWait(driver, 15);
+ 		WebDriverWait wait = new WebDriverWait(driver, 25);
 		wait.until(ExpectedConditions.visibilityOf(moreOptionsFAQBtn));
 
 		Actions act = new Actions(driver);
-		act.doubleClick(moreOptionsFAQBtn).perform();
 		
+		int flag = 0 ; 
+		while(flag<1) {
+		act.doubleClick(moreOptionsFAQBtn).perform();
+		System.out.println("Attemped to click on Faq Button.Checkpoint Archieved!");
+		Thread.sleep(2000);
 
+		String currURL = driver.getCurrentUrl();
+	
+		if (currURL.contains("faq")){
+			flag++ ;
+		}
+ 		}
+	
 	}
 	
 }
